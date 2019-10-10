@@ -1,0 +1,144 @@
+body {
+  font-family: 'Sarabun', sans-serif;
+  font-weight: 300;
+  background: @medium-gray;
+  letter-spacing: .1em;
+}
+.img-responsive {
+  width: 100%;
+  height: auto;
+}
+.btn {
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
+  font-weight: 800;
+  font-size: 12px;
+  letter-spacing: .4em;
+  color: @second-primary;
+  z-index: 0;
+  padding: 5px 24px 5px 0;
+  &:hover {
+    opacity: 1;
+    &:before {
+      height: 25%;
+    }
+  }
+  &:before {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 125%;
+    position: absolute;
+    bottom: -5px;
+    right: 0;
+    z-index: -1;
+    background-color: @brand-primary;
+    transition: all .3s ease;
+  }
+}
+.pt10 {
+  padding-top: 10px;
+}
+.mr15 {
+  margin-right: 15px;
+}
+.mr50 {
+  margin-right: 50px;
+}
+.mr60 {
+  margin-right: 60px;
+}
+.mt3 {
+  margin-top: 3px;
+}
+p {
+  color: @grey80;
+}
+h1 {
+  display: inline-block;
+  position: relative;
+  letter-spacing: 1.2px;
+  color: @second-primary;
+  font-size: 36px;
+  font-weight: 700;
+  &:before {
+/*    content: '';
+    position: absolute;
+    height: 12px;
+    width: 100%;
+    bottom: -6px;
+    left: 0;
+    z-index: -1;
+    background-color: @brand-primary;*/
+  }
+}
+//Main-Side
+.welcome-wrapper {
+  .greeting {
+    margin-top: 50%;
+    h1 {
+      font-size: 74px;
+    }
+  }
+  .hello-me {
+    img {
+      display: block;
+      -webkit-mask-image: url(https://steffenluebben.de/src/svg/animated-blob.svg);
+      -webkit-mask-mode: alpha;
+      -webkit-mask-size: contain;
+      -webkit-mask-repeat: no-repeat;
+      -webkit-position: top left;
+      width: 120%;
+    }
+  }
+}
+.alert--info {
+  background: #2ecc71;
+  border-radius: 3px;
+  font-size: 18px;
+  margin: 25px 0;
+  overflow: hidden;
+  .alert--icon {
+    background: #208e4e;
+    font-size: 18px;
+    color: @white;
+    float: left;
+    text-align: center;
+    padding: 0 10px;
+    padding-bottom: 9999em;
+    margin-bottom: -9999em;
+  }
+  .alert--content {
+    p {
+      margin: 0 0 0 25px;
+      color: @white;
+      font-size: 14px;
+      line-height: 1.8;
+      margin-left: 50px;
+    }
+  }
+}
+.lines {
+  bottom: 0;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  left: 0;
+  margin: 0 auto;
+  max-width: 1140px;
+  pointer-events: none;
+  position: fixed;
+  right: 0;
+  top: 0;
+  .line {
+    border-right: 1px solid rgba(72,72,72,.1);
+    -webkit-transform-origin: top;
+    transform-origin: top;
+    height: 100%;
+    &:first-child {
+      border-left: 1px solid rgba(72,72,72,.1);
+    }
+  }
+}
+/*background*/
+

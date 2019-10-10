@@ -1,0 +1,68 @@
+.sl-sep {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.sl-inner-line {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 0;
+  flex: 1 0;
+  height: 5px;
+  background-color: @brand-primary;
+}
+.help-info-wrapper {
+  h1 {
+    margin-bottom: 25px;
+  }
+}
+/*first-block*/
+.help-emotion-container {
+  margin-top: 200px;
+  .iconbox-icon-wrapper {
+    padding-left: 100px;
+    .iconbox-icon-wrap {
+      display: flex;
+      border-radius: 10px;
+      flex-direction: column;
+      justify-content: center;
+      resize: vertical;
+      height: 150px;
+      float: left;
+      width: 150px;
+      border: 1px solid @brand-primary;
+      background-color: @medium-gray;
+      color: @second-primary;
+      text-align: center;
+      .iconbox-icon {
+        margin: 0 auto;
+        font-size: 40px;
+      }
+      .iconbox {
+        line-height: 2;
+        font-weight: 700;
+      }
+      &.iconbox-shadow {
+        -webkit-box-shadow: 0 25px 70px rgba(0, 0, 0, 0.07);
+        box-shadow: 0 25px 70px rgba(0, 0, 0, 0.07);
+      }
+      &.iconbox-icon-blue {
+        z-index: 10;
+        margin: 10px -30px 0 0;
+        position: relative;
+      }
+      &.iconbox-icon-green {
+        margin: 100px -20px 0 0;
+      }
+      &.iconbox-icon-red {
+        margin: -30px 0 0 -30px;
+      }
+    }
+  }
+}

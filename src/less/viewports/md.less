@@ -1,0 +1,60 @@
+@media screen and (min-width: @tabletLandscapeViewportWidth) {
+  header {
+    .sl-content {
+      .sl-inner {
+        .first-block {
+          li {
+            padding: 0 40px;
+          }
+        }
+        .first-block,
+        .second-block {
+          margin-right: 35px;
+        }
+        .third-block {
+          margin-right: 35px;
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width : 0) and (max-width : 1024px)  {
+  header {
+    .sl-content {
+      .sl-inner {
+        .second-block {
+          display: none;
+        }
+        .btn {
+          display: none;
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width : 0) and (max-width : 625px)  {
+  header {
+    .sl-content {
+      .sl-inner {
+        .first-block {
+          display: none;
+        }
+      }
+      .sl-branding {
+        margin: 0 auto;
+        width: 6em;
+        display: block;
+      }
+    }
+  }
+}
+@media screen and (min-width : 0) and (max-width : 992px)  {
+  .container-fluid {
+    max-width: 100%;
+  }
+}
+@media screen and (min-width: 993px) {
+  .container-fluid {
+    max-width: 1140px;
+  }
+}
